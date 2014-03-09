@@ -8,6 +8,25 @@
 	<string>Productivity</string>
 	<key>connections</key>
 	<dict>
+		<key>7D49351C-5DE3-405F-AA86-42A20872D1E8</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>7C83647C-DBA7-4811-A0E1-293BC63C0A3A</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>99937BC4-16EF-4A1F-A90F-DDBC96DCE4E5</string>
+				<key>modifiers</key>
+				<integer>1048576</integer>
+				<key>modifiersubtext</key>
+				<string>Reveal in Finder</string>
+			</dict>
+		</array>
 		<key>C1F4D4A3-42A5-4DBA-A715-1E2E1CAB41FC</key>
 		<array>
 			<dict>
@@ -30,6 +49,16 @@
 	<string>Subdirectory Search</string>
 	<key>objects</key>
 	<array>
+		<dict>
+			<key>config</key>
+			<dict/>
+			<key>type</key>
+			<string>alfred.workflow.action.openfile</string>
+			<key>uid</key>
+			<string>7C83647C-DBA7-4811-A0E1-293BC63C0A3A</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
 		<dict>
 			<key>config</key>
 			<dict>
@@ -97,15 +126,33 @@
 			<key>version</key>
 			<integer>0</integer>
 		</dict>
+		<dict>
+			<key>type</key>
+			<string>alfred.workflow.action.revealfile</string>
+			<key>uid</key>
+			<string>99937BC4-16EF-4A1F-A90F-DDBC96DCE4E5</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
 	</array>
 	<key>readme</key>
 	<string></string>
 	<key>uidata</key>
 	<dict>
+		<key>7C83647C-DBA7-4811-A0E1-293BC63C0A3A</key>
+		<dict>
+			<key>ypos</key>
+			<real>10</real>
+		</dict>
 		<key>7D49351C-5DE3-405F-AA86-42A20872D1E8</key>
 		<dict>
 			<key>ypos</key>
 			<real>10</real>
+		</dict>
+		<key>99937BC4-16EF-4A1F-A90F-DDBC96DCE4E5</key>
+		<dict>
+			<key>ypos</key>
+			<real>250</real>
 		</dict>
 		<key>C1F4D4A3-42A5-4DBA-A715-1E2E1CAB41FC</key>
 		<dict>
