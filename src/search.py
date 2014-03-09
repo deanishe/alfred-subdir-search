@@ -60,7 +60,9 @@ def filter_paths(queries, paths, root):
     hits = set()
     queries = [q.lower() for q in queries]
     for i, p in enumerate(paths):
-        components = p.replace(root, '').lower().split('/')
+        # Split path into lower-case components,
+        # removing the last one (matched by Spotlight)
+        components = p.replace(root, '').lower().split('/')[:-1]
         matches = 0
         for q in queries:
             for j, s in enumerate(components):
@@ -72,6 +74,7 @@ def filter_paths(queries, paths, root):
         if matches == len(queries):
             log.debug('match: {!r} --> {!r}'.format(queries, p))
             hits.add(i)
+    log.debug('{:d}/{:d} after filtering'.format(len(hits), len(paths)))
     return [p for i, p in enumerate(paths) if i in hits]
 
 
@@ -98,16 +101,18 @@ def main(wf):
 
     if query:
         paths = filter_paths(query, paths, root)
-        log.debug('{:d} hits after filtering'.format(len(paths)))
 
+    home = os.path.expanduser('~/')
     for path in paths:
         filename = os.path.basename(path)
-        wf.add_item(filename, path, valid=True, arg=path,
+        wf.add_item(filename, path.replace(home, '~/'),
+                    valid=True, arg=path,
                     autocomplete=filename,
                     uid=path, type='file',
                     icon=path, icontype='fileicon')
 
     wf.send_feedback()
+    log.debug('finished')
 
 
 if __name__ == '__main__':
