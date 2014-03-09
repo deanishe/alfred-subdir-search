@@ -7,7 +7,19 @@
 	<key>category</key>
 	<string>Productivity</string>
 	<key>connections</key>
-	<dict/>
+	<dict>
+		<key>C1F4D4A3-42A5-4DBA-A715-1E2E1CAB41FC</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>F49D2AC0-B460-4FD2-AA4A-622071171763</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+		</array>
+	</dict>
 	<key>createdby</key>
 	<string>Dean Jackson</string>
 	<key>description</key>
@@ -47,6 +59,44 @@
 			<key>version</key>
 			<integer>0</integer>
 		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>2</integer>
+				<key>keyword</key>
+				<string>subdirhelp</string>
+				<key>subtext</key>
+				<string>Open the Help File in your Browser</string>
+				<key>text</key>
+				<string>Subdirectory Search Help</string>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>C1F4D4A3-42A5-4DBA-A715-1E2E1CAB41FC</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>escaping</key>
+				<integer>127</integer>
+				<key>script</key>
+				<string>open ./README.html</string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>F49D2AC0-B460-4FD2-AA4A-622071171763</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
 	</array>
 	<key>readme</key>
 	<string></string>
@@ -56,6 +106,16 @@
 		<dict>
 			<key>ypos</key>
 			<real>10</real>
+		</dict>
+		<key>C1F4D4A3-42A5-4DBA-A715-1E2E1CAB41FC</key>
+		<dict>
+			<key>ypos</key>
+			<real>130</real>
+		</dict>
+		<key>F49D2AC0-B460-4FD2-AA4A-622071171763</key>
+		<dict>
+			<key>ypos</key>
+			<real>130</real>
 		</dict>
 	</dict>
 	<key>webaddress</key>
