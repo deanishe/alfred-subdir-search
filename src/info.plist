@@ -30,11 +30,11 @@
 				<key>runningsubtext</key>
 				<string>Grubbing through your stuff…</string>
 				<key>script</key>
-				<string>python search.py -d ~/Documents "{query}"</string>
+				<string>python search.py ~/Documents "{query}"</string>
 				<key>subtext</key>
-				<string>Search Subdirectories of ~/Documents</string>
+				<string>Search across sub-directories of ~/Documents</string>
 				<key>title</key>
-				<string>Search ~/Documents</string>
+				<string>Search in ~/Documents</string>
 				<key>type</key>
 				<integer>0</integer>
 				<key>withspace</key>

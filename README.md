@@ -30,9 +30,13 @@ Entering `code alfred workflow` produces a list of all subdirectories somewhere 
 
 The Workflow is pre-configured to search **~/Documents** using the keyword `docs`. To search other directories, you'll have to add your own **Script Filter(s)**, adjusting the **Keyword** and root directory in the **Script** field.
 
-The `-d` option tells `search.py` to only return directories.
-
 ![](screenshot_conf.png "")
+
+You can pass the `-f` or `--files` to `search.py` to also search files.
+
+![](screenshot_conf_files.png "")
+
+**Note:** Searching files as well as directories makes the Workflow **a lot** slower.
 
 ## Screenshots ##
 

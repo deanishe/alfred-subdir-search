@@ -80,8 +80,8 @@ def filter_paths(queries, paths, root):
 
 def main(wf):
     parser = argparse.ArgumentParser()
-    parser.add_argument('-d', '--dirs', action='store_true', dest='dirs_only',
-                        help='only search for directories')
+    parser.add_argument('-f', '--files', action='store_false', dest='dirs_only',
+                        help='also search for files', default=True)
     parser.add_argument('root', metavar='DIR', default=None,
                         help='directory to search in')
     parser.add_argument('query', default=None, help='what to search for')
