@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>bundleid</key>
+	<string>net.deanishe.alfred-subdir-search</string>
+	<key>category</key>
+	<string>Productivity</string>
+	<key>connections</key>
+	<dict/>
+	<key>createdby</key>
+	<string>Dean Jackson</string>
+	<key>description</key>
+	<string>Search Subdirectories of Specified Root Directory</string>
+	<key>disabled</key>
+	<false/>
+	<key>name</key>
+	<string>Subdirectory Search</string>
+	<key>objects</key>
+	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>keyword</key>
+				<string>docs</string>
+				<key>runningsubtext</key>
+				<string>Grubbing through your stuff…</string>
+				<key>script</key>
+				<string>python search.py -d ~/Documents "{query}"</string>
+				<key>subtext</key>
+				<string>Search Subdirectories of ~/Documents</string>
+				<key>title</key>
+				<string>Search in ~/Documents</string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>7D49351C-5DE3-405F-AA86-42A20872D1E8</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>keyword</key>
+				<string>code</string>
+				<key>runningsubtext</key>
+				<string>Grubbing through your stuff…</string>
+				<key>script</key>
+				<string>python search.py -d ~/Code "{query}"</string>
+				<key>subtext</key>
+				<string>Search Subdirectories of ~/Code</string>
+				<key>title</key>
+				<string>Search in ~/Code</string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>49B49924-388F-4E5C-AA49-CDD1C13D7FE0</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+	</array>
+	<key>readme</key>
+	<string></string>
+	<key>uidata</key>
+	<dict>
+		<key>49B49924-388F-4E5C-AA49-CDD1C13D7FE0</key>
+		<dict>
+			<key>ypos</key>
+			<real>130</real>
+		</dict>
+		<key>7D49351C-5DE3-405F-AA86-42A20872D1E8</key>
+		<dict>
+			<key>ypos</key>
+			<real>10</real>
+		</dict>
+	</dict>
+	<key>webaddress</key>
+	<string></string>
+</dict>
+</plist>
