@@ -34,7 +34,7 @@ The Workflow is pre-configured to search **~/Documents** using the keyword `docs
 
 ![](https://raw.github.com/deanishe/alfred-subdir-search/master/screenshot_conf.png "")
 
-You can pass the `-f` or `--files` to `search.py` to also search files.
+You can pass the `-f` or `--files` option to `search.py` to also search files.
 
 ![](https://raw.github.com/deanishe/alfred-subdir-search/master/screenshot_conf_files.png "")
 
