@@ -1,6 +1,6 @@
 # Subdirectory Search (Alfred 2 Workflow) #
 
-Drill down across the subtree of the specified root directory.
+Fuzzy search across the subtree of the specified root directory.
 
 ![](https://raw.github.com/deanishe/alfred-subdir-search/master/screenshot3.png "")
 
