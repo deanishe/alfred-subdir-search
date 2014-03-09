@@ -666,6 +666,10 @@ sub {
 
 <p><strong>Note:</strong> This Workflow requires you to configure your own <strong>Script Filters</strong> in Alfred (by default, there is one configured for <strong>~/Documents</strong> with keyword <code>docs</code>). See <a href="#configuration">Configuration</a> for instructions.</p>
 
+<h2 id="download">Download</h2>
+
+<p>Get the Workflow from <a href="https://github.com/deanishe/alfred-subdir-search/raw/master/Subdirectory%20Search.alfredworkflow">GitHub</a>.</p>
+
 <h2 id="whatitdoes">What it does</h2>
 
 <p>This Workflow provides partial matching of path components, allowing you to drill down into your filesystem with a space-separated query. Each &#8220;word&#8221; of the query will be matched against the components of a directory or file&#8217;s path, so a three-word query will only match at least three levels down from the specified root directory.</p>
@@ -674,7 +678,7 @@ sub {
 
 <pre><code class="bash">python search.py ~/Code &quot;{query}&quot;</code></pre>
 
-<p>Entering <code>code workflow</code> into Alfred produces as list of all subdirectories somewhere under <strong>~/Code</strong> whose names contain <code>workflow</code> (the search is case-insensitive):</p>
+<p>Entering <code>code workflow</code> into Alfred produces a list of all subdirectories somewhere under <strong>~/Code</strong> whose names contain <code>workflow</code> (the search is case-insensitive):</p>
 
 <figure>
 <img src="https://raw.github.com/deanishe/alfred-subdir-search/master/screenshot1.png" alt="" />

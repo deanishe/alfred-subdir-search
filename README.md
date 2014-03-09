@@ -20,7 +20,7 @@ For example, I have a Script Filter set up to search **~/Code** with keyword `co
 python search.py ~/Code "{query}"
 ```
 
-Entering `code workflow` into Alfred produces as list of all subdirectories somewhere under **~/Code** whose names contain `workflow` (the search is case-insensitive):
+Entering `code workflow` into Alfred produces a list of all subdirectories somewhere under **~/Code** whose names contain `workflow` (the search is case-insensitive):
 
 ![](https://raw.github.com/deanishe/alfred-subdir-search/master/screenshot1.png "")
 
