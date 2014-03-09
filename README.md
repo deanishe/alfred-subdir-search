@@ -6,6 +6,10 @@ Drill down across the subtree of the specified root directory.
 
 **Note:** This Workflow requires you to configure your own **Script Filters** in Alfred (by default, there is one configured for **~/Documents** with keyword `docs`). See [Configuration][] for instructions.
 
+## Download ##
+
+Get the Workflow from [GitHub](https://github.com/deanishe/alfred-subdir-search/raw/master/Subdirectory%20Search.alfredworkflow).
+
 ## What it does ##
 
 This Workflow provides partial matching of path components, allowing you to drill down into your filesystem with a space-separated query. Each "word" of the query will be matched against the components of a directory or file's path, so a three-word query will only match at least three levels down from the specified root directory.
