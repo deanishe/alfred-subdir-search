@@ -2,6 +2,10 @@
 
 Fuzzy search across the subtree of the specified root directory.
 
+## This Workflow has been replaced ##
+
+Have a look at [this one](https://github.com/deanishe/alfred-fuzzyfolders), instead. It's much better.
+
 ![](https://raw.github.com/deanishe/alfred-subdir-search/master/screenshot3.png "")
 
 **Note:** This Workflow requires you to configure your own **Script Filters** in Alfred (by default, there is one configured for **~/Documents** with keyword `docs`). See **Configuration** for instructions.
